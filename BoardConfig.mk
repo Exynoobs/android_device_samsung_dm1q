@@ -54,5 +54,8 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/wlan/qcacld-3.0/.qca6490 \
     qcom/opensource/bt-kernel
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 12266242048
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
