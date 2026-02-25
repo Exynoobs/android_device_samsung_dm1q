@@ -1,5 +1,5 @@
 # All unpinned blobs are extracted from S911BXXS8EZA1
-# Blobs for SM-S9110 are extracted from S9110ZHS6DYG5
+# All pinned blobs are extracted from S9110ZCS6EZA1
 
 # ACDB
 vendor/etc/audconf/OPEN/acdb_cal.acdb
