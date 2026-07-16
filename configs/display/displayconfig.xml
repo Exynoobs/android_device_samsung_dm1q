@@ -1,0 +1,121 @@
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+
+     Brightness map derived from stock config_screenBrightnessBacklight/Nits
+     (0..612 -> 1..1200 nits).
+-->
+<displayConfiguration>
+    <screenBrightnessMap>
+        <point>
+            <value>0.0</value>
+            <nits>1</nits>
+        </point>
+        <point>
+            <value>0.019608</value>
+            <nits>10.387</nits>
+        </point>
+        <point>
+            <value>0.040850</value>
+            <nits>25.374</nits>
+        </point>
+        <point>
+            <value>0.083333</value>
+            <nits>62.58</nits>
+        </point>
+        <point>
+            <value>0.166667</value>
+            <nits>152.628</nits>
+        </point>
+        <point>
+            <value>0.250000</value>
+            <nits>257.86</nits>
+        </point>
+        <point>
+            <value>0.333333</value>
+            <nits>374.351</nits>
+        </point>
+        <point>
+            <value>0.416667</value>
+            <nits>500</nits>
+        </point>
+        <point>
+            <value>0.522876</value>
+            <nits>627.451</nits>
+        </point>
+        <point>
+            <value>0.666667</value>
+            <nits>800</nits>
+        </point>
+        <point>
+            <value>0.833333</value>
+            <nits>1000</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>1200</nits>
+        </point>
+    </screenBrightnessMap>
+
+    <highBrightnessMode enabled="true">
+        <!-- Normal max is backlight 255 / 500 nits; above is extended/HBM (stock max 612). -->
+        <transitionPoint>0.416667</transitionPoint>
+        <minimumLux>3000</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>1.0</sdrNits>
+                <hdrRatio>1.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>2.0</sdrNits>
+                <hdrRatio>2.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>80.0</sdrNits>
+                <hdrRatio>4.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>100.0</sdrNits>
+                <hdrRatio>5.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>300.0</sdrNits>
+                <hdrRatio>5.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>500.0</sdrNits>
+                <hdrRatio>3.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>1200.0</sdrNits>
+                <hdrRatio>1.0</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
+
+    <autoBrightness enabled="true">
+        <brighteningLightDebounceMillis>1000</brighteningLightDebounceMillis>
+        <darkeningLightDebounceMillis>2000</darkeningLightDebounceMillis>
+        <brighteningLightDebounceIdleMillis>-1</brighteningLightDebounceIdleMillis>
+        <darkeningLightDebounceIdleMillis>-1</darkeningLightDebounceIdleMillis>
+    </autoBrightness>
+
+    <hdrBrightnessConfig>
+        <brightnessMap>
+        </brightnessMap>
+        <brightnessIncreaseDebounceMillis>0</brightnessIncreaseDebounceMillis>
+        <screenBrightnessRampIncrease>-1.0</screenBrightnessRampIncrease>
+        <brightnessDecreaseDebounceMillis>0</brightnessDecreaseDebounceMillis>
+        <screenBrightnessRampDecrease>-1.0</screenBrightnessRampDecrease>
+    </hdrBrightnessConfig>
+
+    <lightSensor>
+        <type>com.samsung.sensor.auto_brightness</type>
+        <name>STK33F11 Auto Brightness Sensor</name>
+    </lightSensor>
+</displayConfiguration>
