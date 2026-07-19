@@ -119,7 +119,7 @@
         <vsid>0xB3000000</vsid>
         <loopbackDelay>540</loopbackDelay>
         <loopbackNoDelay>80</loopbackNoDelay>
-        <maxVolIndex>5</maxVolIndex>
+        <maxVolIndex>8</maxVolIndex>
         <mode_map>
             <modepair key="0x11C05000" value="0xB3000001"/>
             <modepair key="0x11DC5000" value="0xB3000001"/>
