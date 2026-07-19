@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_dm1q
 PRODUCT_DEVICE := dm1q
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-S911B
 PRODUCT_MANUFACTURER := Samsung
 
